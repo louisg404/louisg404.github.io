@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RecyclDashboard</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/trash.ico">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.c205e740b8dc96f6c673.css"></head>
+<body>
+  <div class="wrapper">
+      <nav id="sidebar">
+          <div class="sidebar-header">
+            <h3>Recycl Dashboard</h3>
+          </div>
+
+          <ul class="list-unstyled components">
+              <li>
+                  <a href="/demandes">Demandes</a>
+              </li>
+              <li>
+                  <a href="/tournees">Tournées</a>
+              </li>
+              <li>
+                  <a href="/quantitetotale">Quantité totale</a>
+              </li>
+              <li>
+                  <a href="/tourneesemployes">Tournées employés</a>
+              </li>
+              <li>
+                  <a href="/formalys">Formalys</a>
+              </li>
+              <li>
+                  <a href="/demandesnoninscrites">Demandes non inscrites</a>
+              </li>
+              <li>
+                  <a href="/quantitetotalesite">Quantité totale pour un site</a>
+              </li>
+              <li>
+                  <a href="/quantitetotalenational">Quantité totale</a>
+              </li>
+              <li>
+                  <a href="/inscriptions">Inscriptions tournées</a>
+              </li>
+                <svg style="position: fixed; bottom: 0; left: 0;" class="bi bi-arrow-left-short sidebarCollapseClose" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M7.854 4.646a.5.5 0 010 .708L5.207 8l2.647 2.646a.5.5 0 01-.708.708l-3-3a.5.5 0 010-.708l3-3a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M4.5 8a.5.5 0 01.5-.5h6.5a.5.5 0 010 1H5a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                </svg>
+          </ul>
+      </nav>
+      <div id="content">
+          <app-root></app-root>
+
+          <svg style="position: fixed; bottom: 0; left: 0; z-index: 1" class="bi bi-arrow-right-short sidebarCollapseOpen" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.793 8 8.146 5.354a.5.5 0 010-.708z" clip-rule="evenodd"/>
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 01.5-.5H11a.5.5 0 010 1H4.5A.5.5 0 014 8z" clip-rule="evenodd"/>
+          </svg>
+      </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $('.bi-arrow-right-short').hide();
+        $('.sidebarCollapseClose').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $('.bi-arrow-right-short').show();
+            $('.bi-arrow-left-short').hide();
+        });
+        $('.sidebarCollapseOpen').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $('.bi-arrow-right-short').hide();
+            $('.bi-arrow-left-short').show();
+        });
+    });
+  </script>
+<script src="runtime-es2015.1eba213af0b233498d9d.js" type="module"></script><script src="runtime-es5.1eba213af0b233498d9d.js" nomodule defer></script><script src="polyfills-es5.1fd9b76218eca8053895.js" nomodule defer></script><script src="polyfills-es2015.690002c25ea8557bb4b0.js" type="module"></script><script src="main-es2015.283a3a842fc33e546d16.js" type="module"></script><script src="main-es5.283a3a842fc33e546d16.js" nomodule defer></script></body>
+</html>
